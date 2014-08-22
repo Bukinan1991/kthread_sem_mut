@@ -1,0 +1,1 @@
+cmd_/home/test/drivers/kthread_sem_mut/new_test.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.11.0-26-generic/scripts/module-common.lds --build-id  -o /home/test/drivers/kthread_sem_mut/new_test.ko /home/test/drivers/kthread_sem_mut/new_test.o /home/test/drivers/kthread_sem_mut/new_test.mod.o

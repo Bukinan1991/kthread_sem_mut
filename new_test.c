@@ -8,20 +8,18 @@ module_param(N, int, 0);
 
 static int thread_fun1(void* data) {
 	printk("start fun 1");
-	struct task_struct *t1 = NULL;
-	
-	t1 = kthread_run(thread_fun1, (void*)N, "my_thread");
 	printk("input while");
 	printk("exit while");
-	if(t1 != NULL) kthread_stop(t1);
 	printk("stop");
+	while(!kthread_should_stop())
+	    msleep(100);
 	return 0;
 }
 
 
 
 static int test_thread(void) {
-	struct task_struct *t1;
+	struct task_struct *t1[2];
 	t1 = kthread_run(thread_fun1, (void*)N, "my_thread");
 	
 	msleep(10000);
