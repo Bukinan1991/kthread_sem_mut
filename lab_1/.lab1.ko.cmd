@@ -1,0 +1,1 @@
+cmd_/home/test/drivers/lab-rabs/lab_1/lab1.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.11.0-26-generic/scripts/module-common.lds --build-id  -o /home/test/drivers/lab-rabs/lab_1/lab1.ko /home/test/drivers/lab-rabs/lab_1/lab1.o /home/test/drivers/lab-rabs/lab_1/lab1.mod.o

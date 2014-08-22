@@ -1,0 +1,1 @@
+cmd_/home/test/drivers/lab-rabs/lab_6_kthread/dr_kthread.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.11.0-26-generic/scripts/module-common.lds --build-id  -o /home/test/drivers/lab-rabs/lab_6_kthread/dr_kthread.ko /home/test/drivers/lab-rabs/lab_6_kthread/dr_kthread.o /home/test/drivers/lab-rabs/lab_6_kthread/dr_kthread.mod.o
